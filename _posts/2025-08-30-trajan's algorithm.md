@@ -70,7 +70,7 @@ Tarjan's algorithm is used to find the Strongly Connected Components(SCCs) of a 
     - If the adjacent node has not been visited yet, we call the DFS routine for that node and on backtracking, update the current node's low value as $low[u] = min(low[u], \; low[v])$. This is necessary to propagate the low value of the descendants up to u.
 - *SCC identification:* If $low[u] = disc[u]$, then u is the root of a strongly connected component and we pop the nodes from the stack until u is popped, indicating that the SCC with u as its root has been removed and we repeat the process.
 
-![Pictorial representation of the algorithm](/assets/images/figures-12.png)
+![Pictorial representation of the algorithm](/assets/images/figures-02.png)
 
 # Tarjan's algorithm for undirected graphs
 A slightly modified version of Tarjan's algorithm is used for undirected graphs to find the bridges and articulation points in the graph. **Bridges** are the edges whose removal increases the number of connected components of the graph, whereas **articulation points** are the vertices(nodes) whose removal increases the number of connected components.
